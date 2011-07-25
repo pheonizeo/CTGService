@@ -13,27 +13,39 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_area :name %>
+    <%= f.text_area :name ,
+        :rows => 3,
+        :cols => 60%>
   </div>
   <div class="field">
     <%= f.label :location %><br />
-    <%= f.text_area :location %>
+    <%= f.text_area :location,
+        :rows => 3,
+        :cols => 60%>
   </div>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description,
+        :rows => 3,
+        :cols => 60%>
   </div>
   <div class="field">
     <%= f.label :time_start %><br />
-    <%= f.datetime_select :time_start %>
+    <%= f.datetime_select :time_start,
+        :rows => 3,
+        :cols => 60%>
   </div>
   <div class="field">
     <%= f.label :time_expire %><br />
-    <%= f.datetime_select :time_expire %>
+    <%= f.datetime_select :time_expire,
+        :rows => 3,
+        :cols => 60%>
   </div>
   <div class="field">
     <%= f.label :event_id %><br />
-    <%= f.text_field :event_id %>
+    <%= f.text_field :event_id,
+        :rows => 3,
+        :cols => 60%>
   </div>
   <div class="actions">
     <%= f.submit %>

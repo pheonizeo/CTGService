@@ -10,10 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110725133838) do
+ActiveRecord::Schema.define(:version => 20110725134615) do
 
   create_table "event_types", :force => true do |t|
-    t.text     "type"
+    t.text     "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

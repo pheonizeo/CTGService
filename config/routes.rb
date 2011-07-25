@@ -1,4 +1,8 @@
 CTGService::Application.routes.draw do
+  resources :event_types
+
+  resources :events
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

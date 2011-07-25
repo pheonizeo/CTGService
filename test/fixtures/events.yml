@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyText
+  location: MyText
+  description: MyText
+  time_start: 2011-07-25 20:37:44
+  time_expire: 2011-07-25 20:37:44
+  event_id: 1
+
+two:
+  name: MyText
+  location: MyText
+  description: MyText
+  time_start: 2011-07-25 20:37:44
+  time_expire: 2011-07-25 20:37:44
+  event_id: 1

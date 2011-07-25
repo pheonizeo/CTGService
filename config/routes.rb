@@ -1,9 +1,29 @@
 CTGService::Application.routes.draw do
+
+  get 'admin' => 'admin#index'
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
   resources :users
 
   resources :event_types
 
   resources :events
+
+  get "event/index"
+    resources :events do
+    get :name, :on => :location
+  end
+
+  #get "event_type/index"
+    #resource :event_types do
+    #get :id, :on => :type
+    #end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -55,6 +75,7 @@ CTGService::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
+  root :to =>'events#index',:as => 'event'
 
   # See how all your routes lay out with "rake routes"
 

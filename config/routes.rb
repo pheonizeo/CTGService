@@ -1,4 +1,6 @@
 CTGService::Application.routes.draw do
+  resources :users
+
   resources :event_types
 
   resources :events

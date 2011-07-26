@@ -24,3 +24,4 @@ class SessionsControllerTest < ActionController::TestCase
      assert_redirected_to store_url
   end
 end
+

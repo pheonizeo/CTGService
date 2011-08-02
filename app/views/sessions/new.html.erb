@@ -26,8 +26,22 @@
 
 
         <div style="text-align:center">
-      <%= submit_tag "Login" %>
+
+         <table style="margin:0 auto 0 auto">
+         <tr>
+          <td><%= submit_tag "Login" %></td>
+           <td><%= submit_tag "Cancel" %></td>
+
+
+           <td>or <%= link_to "Sign up", :controller => 'users', :action =>'new'  %></td>
+
+
+
+
+          </tr>
+         </table>
       </div>
+
 
     </fieldset>
 <% end %>

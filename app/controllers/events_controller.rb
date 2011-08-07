@@ -6,7 +6,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @events }
+      format.xml  { render :xml => @events.to_xml}
     end
   end
 
@@ -17,7 +17,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @event }
+      format.xml  { render :xml => @event.to_xml }
     end
   end
 
@@ -28,7 +28,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @event }
+      format.xml  { render :xml => @event.to_xml }
     end
   end
 
@@ -45,7 +45,7 @@ class EventsController < ApplicationController
     respond_to do |format|
       if @event.save
         format.html { redirect_to(@event, :notice => 'Event was successfully created.') }
-        format.xml  { render :xml => @event, :status => :created, :location => @event }
+        format.xml  { render :xml => @event.to_xml, :status => :created, :location => @event }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @event.errors, :status => :unprocessable_entity }

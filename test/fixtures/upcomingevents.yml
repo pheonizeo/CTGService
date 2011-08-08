@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  location: MyString
+  timestart: 2011-08-08 23:09:14
+  timeexpire: 2011-08-08 23:09:14
+
+two:
+  name: MyString
+  description: MyString
+  location: MyString
+  timestart: 2011-08-08 23:09:14
+  timeexpire: 2011-08-08 23:09:14

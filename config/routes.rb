@@ -1,5 +1,7 @@
 CTGService::Application.routes.draw do
 
+
+
   get 'admin' => 'admin#index'
 
  controller :sessions do
@@ -13,9 +15,9 @@ CTGService::Application.routes.draw do
 
   resources :event_types
 
-  resources :events
 
 
+  resources :upcomingevents
 
   #get "event/index"
   #  resources :events do

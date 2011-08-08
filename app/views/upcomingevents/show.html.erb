@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @upcomingevent.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @upcomingevent.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @upcomingevent.location %>
+</p>
+
+<p>
+  <b>Timestart:</b>
+  <%= @upcomingevent.timestart %>
+</p>
+
+<p>
+  <b>Timeexpire:</b>
+  <%= @upcomingevent.timeexpire %>
+</p>
+
+
+<%= link_to 'Edit', edit_upcomingevent_path(@upcomingevent) %> |
+<%= link_to 'Back', upcomingevents_path %>

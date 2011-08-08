@@ -2,12 +2,11 @@ CTGService::Application.routes.draw do
 
   get 'admin' => 'admin#index'
 
-  controller :sessions do
+ controller :sessions do
     get 'login' => :new
-    post 'login' => :create
-    delete 'logout' => :destroy
+    post 'login' => :login
+    delete 'logout' => :logout
     get 'sign up' => :new
-
   end
 
   resources :users
@@ -15,6 +14,8 @@ CTGService::Application.routes.draw do
   resources :event_types
 
   resources :events
+
+
 
   #get "event/index"
   #  resources :events do
@@ -76,7 +77,7 @@ CTGService::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "sessions#new"
+  root :to => "admin#index"
 
 
 

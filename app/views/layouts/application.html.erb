@@ -7,7 +7,13 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+       <div>
+         <% if User.find_by_id(session[:user_id]!=nil) %>
+         <%= User.find_by_id(session[:user_id]).name %>
 
+         <%= link_to 'Logout',:controller => 'admin', :action =>'logout'%>
+             <% end %>
+       </div>
 <%= yield %>
 
 </body>

@@ -1,4 +1,5 @@
 class EventTypesController < ApplicationController
+  before_filter :authenticate, :only
   # GET /event_types
   # GET /event_types.xml
   def index

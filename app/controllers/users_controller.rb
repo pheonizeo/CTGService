@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   # GET /users
   # GET /users.xml
   def index
@@ -30,6 +31,7 @@ class UsersController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @user.to_xml}
     end
+    redirect_to (:controller=>'events' ,:action =>'index')
   end
 
   # GET /users/1/edit

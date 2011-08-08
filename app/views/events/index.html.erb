@@ -24,6 +24,8 @@
     <td><%= link_to 'Show', event %></td>
     <td><%= link_to 'Edit', edit_event_path(event) %></td>
     <td><%= link_to 'Destroy', event, :confirm => 'Do you need to delete this item?', :method => :delete %></td>
+
+    <td><a href="<%= event_path(event) %>.xml">xml file</a></td>
   </tr>
 <% end %>
 </table>

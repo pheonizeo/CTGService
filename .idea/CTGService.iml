@@ -58,6 +58,11 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.9, /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.3.3, /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.3.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3 (v1.3.3, /Library/Ruby/Gems/1.8/gems/sqlite3-1.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionwebservice (v1.2.6, /Library/Ruby/Gems/1.8/gems/actionwebservice-1.2.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v1.13.6, /Users/pheonize/.gem/ruby/1.8/gems/actionpack-1.13.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v1.15.6, /Users/pheonize/.gem/ruby/1.8/gems/activerecord-1.15.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v1.4.4, /Library/Ruby/Gems/1.8/gems/activesupport-1.4.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.0, /Library/Ruby/Gems/1.8/gems/builder-3.0.0)" level="application" />
   </component>
 </module>
 

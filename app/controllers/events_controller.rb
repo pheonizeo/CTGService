@@ -1,4 +1,6 @@
 class EventsController < ApplicationController
+
+  before_filter :authenticate, :except => [:login]
   # GET /events
   # GET /events.xml
   def index
@@ -18,8 +20,18 @@ class EventsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @event.to_xml }
+
     end
   end
+
+  # GET /events
+ # def xml
+  #  @events = Event.all
+
+   # respond_to do |format|
+    #  format.xml { render :xml =>@}
+    #end
+  #end
 
   # GET /events/new
   # GET /events/new.xml
@@ -44,8 +56,8 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to(@event, :notice => 'Event was successfully created.') }
-        format.xml  { render :xml => @event.to_xml, :status => :created, :location => @event }
+        format.html { redirect_to(@event.to_xml, :notice => 'Event was successfully created.') }
+        format.xml  { render :xml => @event, :status => :created, :location => @event }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @event.errors, :status => :unprocessable_entity }

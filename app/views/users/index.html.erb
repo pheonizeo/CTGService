@@ -1,9 +1,13 @@
-<h1>Listing users</h1>
+<fieldset>
+      <legend style="text-align:center">Listing users</legend>
 
-<table>
+<table style="margin:0 auto 0 auto">
+
+
 
 <% for user in User.all do %>
-
+   <div style="text-align:center">
+    <table style="margin:0 auto 0 auto">
   <tr>
     <td><%= user.name %></td>
 
@@ -16,6 +20,11 @@
 </table>
 
 <br />
+  <div style="text-align:center">
+    <table style="margin:0 auto 0 auto">
+  <tr>
 
-<%= link_to 'New User', new_user_path %>
-<%= link_to 'Back', new_user_path %>
+<%= link_to 'New User', new_user_path %>    or
+
+<tr><%= link_to 'Back', :controller => "admin", :action =>"login" %>   </tr>
+</tr>

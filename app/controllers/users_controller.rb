@@ -93,6 +93,11 @@ class UsersController < ApplicationController
       format.html { redirect_to(users_url) }
       format.xml { head :ok }
     end
+
+  end
+  protected
+  def authenticate
+
   end
 
 end

@@ -4,4 +4,5 @@ class Upcomingevent < ActiveRecord::Base
   validates :description, :presence =>true
   validates :timestart, :presence => true
   validates :timeexpire, :presence => true
+
 end

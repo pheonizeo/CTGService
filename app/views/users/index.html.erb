@@ -1,31 +1,34 @@
 <fieldset>
-      <legend style="text-align:center">Listing users</legend>
+  <legend style="text-align:center">Listing users</legend>
 
-<table style="margin:0 auto 0 auto">
+  <table style="margin:0 auto 0 auto">
 
 
+    <% for user in User.all do %>
+        <div style="text-align:center">
+          <table style="margin:0 auto 0 auto">
+            <tr>
+              <td><%= user.name %></td>
 
-<% for user in User.all do %>
-   <div style="text-align:center">
-    <table style="margin:0 auto 0 auto">
-  <tr>
-    <td><%= user.name %></td>
+              <td><%= link_to 'Show', user %></td>
+              <td><%= link_to 'Edit', edit_user_path(user) %></td>
+              <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?',
+                              :method => :delete %></td>
+            </tr>
+    <% end %>
+    </table>
 
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?',
-                    :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+    <br/>
 
-<br />
-  <div style="text-align:center">
-    <table style="margin:0 auto 0 auto">
-  <tr>
+    <div style="text-align:center">
+      <table style="margin:0 auto 0 auto">
+        <tr>
 
-<%= link_to 'New User', new_user_path %>    or
+          <%= link_to 'New User', new_user_path %>    or
 
-<tr><%= link_to 'Back', :controller => "admin", :action =>"login" %>   </tr>
-</tr>
-</table>
+        <%= link_to 'Back', :controller => "admin", :action =>"login" %>
+        </tr>
+      </table>
+    </div>
+    </div></table>
+</fieldset>

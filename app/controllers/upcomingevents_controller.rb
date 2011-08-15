@@ -1,4 +1,5 @@
 class UpcomingeventsController < ApplicationController
+
   # GET /upcomingevents
   # GET /upcomingevents.xml
   def index

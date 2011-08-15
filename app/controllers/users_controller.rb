@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-
+  before_filter :authenticate, :except => [:login]
   # GET /users
   # GET /users.xml
   def index
@@ -48,8 +48,10 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to(user_url,
-                                  :notice => "User #{@user.name} was successfully created.") }
+        format.html {redirect_to ( :controller => 'admin' , :action =>  'login' )}
+
+        #format.html { redirect_to(user_url,
+                         #         :notice => "User #{@user.name} was successfully created.") }
         format.xml { render :xml => @user,
                             :status => :created, :location => @user }
       else
@@ -96,6 +98,7 @@ class UsersController < ApplicationController
     end
 
   end
+
   protected
   def authenticate
 

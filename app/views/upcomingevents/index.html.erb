@@ -2,36 +2,39 @@
 
 
 <fieldset>
-<table>
- <!-- <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Location</th>
-    <th>Time start</th>
-    <th>Time expire</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr> -->
+  <table>
+    <!-- <tr>
+     <th>Name</th>
+     <th>Description</th>
+     <th>Location</th>
+     <th>Time start</th>
+     <th>Time expire</th>
+     <th></th>
+     <th></th>
+     <th></th>
+   </tr> -->
 
-<% @upcomingevents.each do |upcomingevent| %>
-  <tr>
-    <td><%= upcomingevent.name %></td>
-    <!--<td><%= upcomingevent.description %></td>
+    <% @upcomingevents.each do |upcomingevent| %>
+        <tr>
+          <td><%= upcomingevent.name %></td>
+          <!--<td><%= upcomingevent.description %></td>
     <td><%= upcomingevent.location %></td>
     <td><%= upcomingevent.timestart %></td>
     <td><%= upcomingevent.timeexpire %></td>  -->
-    <td><%= link_to 'Show', upcomingevent %></td>
-    <td><%= link_to 'Edit', edit_upcomingevent_path(upcomingevent) %></td>
-    <td><%= link_to 'Destroy', upcomingevent, :confirm => 'Are you sure?', :method => :delete %></td>
-    <td><a href="<%= upcomingevent_path(upcomingevent) %>.xml">xml file</a></td>
+          <td><%= link_to 'Show', upcomingevent %></td>
+          <td><%= link_to 'Edit', edit_upcomingevent_path(upcomingevent) %></td>
+          <td><%= link_to 'Destroy', upcomingevent, :confirm => 'Are you sure?', :method => :delete %></td>
+          <td><a href="<%= upcomingevent_path(upcomingevent) %>.xml">xml file</a></td>
 
-      <!--<td><a href="<%= upcomingevent_url(upcomingevent) %>.xml">xml file</a></td>    -->
-  </tr>
-<% end %>
-</table>
 
-<br />
+        </tr>
+    <% end %>
+  </table>
 
-<%= link_to 'Add event', new_upcomingevent_path %>
+  <br/>
+
+
+  <%= button_to 'Add event', new_upcomingevent_path %>
+
+  <td><a href="<%= upcomingevents_url %>.xml">xml file</a></td>
 </fieldset>

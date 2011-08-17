@@ -5,7 +5,7 @@ class UpcomingeventsController < ApplicationController
   # GET /upcomingevents
   # GET /upcomingevents.xml
   def index
-    @upcomingevents = Upcomingevent.all
+    @upcomingevents = Upcomingevent.find(:all,:order => 'timestart')
 
     respond_to do |format|
       format.html # index.html.erb

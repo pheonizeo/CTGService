@@ -1,44 +1,56 @@
 <%= form_tag do %>
-                       <!--login to system-->
+
+    <!--login to system-->
     <fieldset>
       <legend style="text-align:center">Please Log In</legend>
-       <p id="alert"><%= alert %></p>
-
-      <table style="margin:0 auto 0 auto">
+      <div style="text-align: center"></div>
+      <table style="margin: 0 auto 0 auto">
 
         <tr>
           <td>
-            <label for="name">Name:</label>
+            <font color="#CC0000"><div class="action"><p id="alert"><%= alert %></p></div> </font>
           </td>
-          <td>
-            <%= text_field_tag :name, params[:name] %>
-          </td>
+          </div>
         </tr>
-        <tr>
-          <td>
-            <label for="password">Password:</label>
-          </td>
-          <td>
-            <%= password_field_tag :password, params[:password] %>
-          </td>
-        </tr>
-      </table>
+
+
+        <table style="margin:0 auto 0 auto">
+
+          <tr>
+            <td>
+              <label for="name">Name:</label>
+            </td>
+            <td>
+              <%= text_field_tag :name, params[:name] %>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password:</label>
+            </td>
+            <td>
+              <%= password_field_tag :password, params[:password] %>
+            </td>
+          </tr>
+        </table>
 
 
         <div style="text-align:center">
 
-         <table style="margin:0 auto 0 auto">
-         <tr>
-          <td><div class="actions"><%= submit_tag "Login" %></div>    </td>
-           <td><div class="actions"><%= submit_tag "Cancel" %></div>    </td>
-            <td>or <%= link_to "Sign up", :controller => 'users', :action =>'new'  %></td>
+          <table style="margin:0 auto 0 auto">
+            <tr>
+              <td>
+                <div class="actions"><%= submit_tag "Login" %></div>
+              </td>
+              <td>
+                <div class="actions"><%= submit_tag "Cancel" %></div>
+              </td>
+              <td>or <%= link_to "Sign up", :controller => 'users', :action =>'new' %></td>
 
 
-
-
-          </tr>
-         </table>
-      </div>
+            </tr>
+          </table>
+        </div>
 
 
     </fieldset>

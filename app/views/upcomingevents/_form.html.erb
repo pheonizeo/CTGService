@@ -1,4 +1,5 @@
 <%= form_for(@upcomingevent) do |f| %>
+    <fieldset>
   <% if @upcomingevent.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@upcomingevent.errors.count, "error") %> prohibited this upcomingevent from being saved:</h2>
@@ -34,4 +35,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+        </fieldset>
 <% end %>

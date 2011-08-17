@@ -1,33 +1,37 @@
-<h1>Listing upcomingevents</h1>
+<h1>Event List</h1>
 
+
+<fieldset>
 <table>
-  <tr>
+ <!-- <tr>
     <th>Name</th>
     <th>Description</th>
     <th>Location</th>
-    <th>Timestart</th>
-    <th>Timeexpire</th>
+    <th>Time start</th>
+    <th>Time expire</th>
     <th></th>
     <th></th>
     <th></th>
-  </tr>
+  </tr> -->
 
 <% @upcomingevents.each do |upcomingevent| %>
   <tr>
     <td><%= upcomingevent.name %></td>
-    <td><%= upcomingevent.description %></td>
+    <!--<td><%= upcomingevent.description %></td>
     <td><%= upcomingevent.location %></td>
     <td><%= upcomingevent.timestart %></td>
-    <td><%= upcomingevent.timeexpire %></td>
+    <td><%= upcomingevent.timeexpire %></td>  -->
     <td><%= link_to 'Show', upcomingevent %></td>
     <td><%= link_to 'Edit', edit_upcomingevent_path(upcomingevent) %></td>
     <td><%= link_to 'Destroy', upcomingevent, :confirm => 'Are you sure?', :method => :delete %></td>
     <td><a href="<%= upcomingevent_path(upcomingevent) %>.xml">xml file</a></td>
+
+      <!--<td><a href="<%= upcomingevent_url(upcomingevent) %>.xml">xml file</a></td>    -->
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Upcomingevent', new_upcomingevent_path %>
-
+<%= link_to 'Add event', new_upcomingevent_path %>
+</fieldset>

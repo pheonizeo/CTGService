@@ -7,9 +7,9 @@ class ApplicationController < ActionController::Base
   protected
 
   def authenticate
-  #  authenticate_or_request_with_http_basic do |user_name, password|
-  #    user_name == 'admin' && password == 'password'
-  #  end
+    #  authenticate_or_request_with_http_basic do |user_name, password|
+    #    user_name == 'admin' && password == 'password'
+    #  end
     unless User.find_by_id(session[:user_id])
       flash[:notice] = "Please Login"
       redirect_to(:controller => "admin", :action => "login")

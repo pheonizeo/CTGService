@@ -1,4 +1,5 @@
 class AdminController < ApplicationController
+
    def login
     if request.post?
       user = User.authenticate(params[:name], params[:password])
@@ -6,7 +7,7 @@ class AdminController < ApplicationController
         session[:user_id] = user.id
         redirect_to(:action => "index")
       else
-        flash.now[:alert] = "Invalid user/password"
+        flash.now[:alert] = "Invalid user/password , please try again"
       end
     end
   end

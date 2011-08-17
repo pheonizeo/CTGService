@@ -1,5 +1,7 @@
 class UpcomingeventsController < ApplicationController
 
+
+  #before_filter :authenticate, :except => [:login]
   # GET /upcomingevents
   # GET /upcomingevents.xml
   def index

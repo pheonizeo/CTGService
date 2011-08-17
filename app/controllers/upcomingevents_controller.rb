@@ -1,7 +1,7 @@
 class UpcomingeventsController < ApplicationController
 
 
-  #before_filter :authenticate, :except => [:login]
+  before_filter :authenticate, :except => [:login]
   # GET /upcomingevents
   # GET /upcomingevents.xml
   def index
@@ -82,5 +82,9 @@ class UpcomingeventsController < ApplicationController
       format.html { redirect_to(upcomingevents_url) }
       format.xml  { head :ok }
     end
+  end
+  protected
+  def authenticate
+
   end
 end

@@ -50,12 +50,12 @@
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.8, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.16, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.0.9, ruby-1.8.7-p174) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails (v3.0.9, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.6.6, ruby-1.8.7-p174) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails (v3.0.9, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.1, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.0.9, ruby-1.8.7-p174) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="arel (v2.0.10, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.2.19, ruby-1.8.7-p174) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="arel (v2.0.10, ruby-1.8.7-p174) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.0.9, ruby-1.8.7-p174) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

@@ -13,23 +13,36 @@
     <% end %>
     <fieldset>
       <legend>Enter User Details</legend>
-
-      <div>
+    <table>
+      <tr>
+      <td>
         <%= f.label :name %>
+      </td>
+      <td>
         <%= f.text_field :name %>
-      </div>
-
-      <div class="field">
+      </td>
+      </tr>
+      <tr>
+      <td>
         <%= f.label 'Password' %>
+      </td>
+      <td>
         <%= f.password_field :password %>
-      </div>
+      </td>
+       </tr>
+        <tr>
+      <td>
 
-      <div class="field">
         <%= f.label 'Confirm' %>
+        </td>
+      <td>
         <%= f.password_field :password_confirmation %>
-      </div>
-      <div>
+      </td>
+      </tr>
+      <tr>
+         <td>
         <%= f.submit %>
-      </div>
+        </td>
+      </tr>
     </fieldset>
 <% end %>

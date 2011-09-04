@@ -2,6 +2,7 @@ class UpcomingeventsController < ApplicationController
 
 
 
+
     #before_filter :authenticate, :except => [:login]
     # GET /upcomingevents
     # GET /upcomingevents.xml
@@ -97,10 +98,10 @@ class UpcomingeventsController < ApplicationController
       end
     end
 
-    protected
-    def authenticate
+    #protected
+    #def authenticate
 
-    end
+    #end
 
   end
 

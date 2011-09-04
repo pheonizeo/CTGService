@@ -98,10 +98,10 @@ class UpcomingeventsController < ApplicationController
       end
     end
 
-    #protected
-    #def authenticate
+    protected
+    def authenticate
 
-    #end
+    end
 
   end
 

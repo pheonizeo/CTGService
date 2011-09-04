@@ -44,7 +44,7 @@
       <file leaf-file-name="upcomingevents_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/upcomingevents_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="5" selection-start="2546" selection-end="2546" vertical-scroll-proportion="0.76303315">
+            <state line="103" column="4" selection-start="2543" selection-end="2543" vertical-scroll-proportion="2.208531">
               <folding />
             </state>
           </provider>
@@ -893,7 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/upcomingevents_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="5" selection-start="2546" selection-end="2546" vertical-scroll-proportion="0.76303315">
+        <state line="103" column="4" selection-start="2543" selection-end="2543" vertical-scroll-proportion="2.208531">
           <folding />
         </state>
       </provider>

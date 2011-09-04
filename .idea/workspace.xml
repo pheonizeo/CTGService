@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/upcomingevents/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="958" selection-end="958" vertical-scroll-proportion="-2.5">
+            <state line="46" column="4" selection-start="915" selection-end="915" vertical-scroll-proportion="0.115384616">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upcomingevents_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upcomingevents_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/upcomingevents_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="49" selection-start="104" selection-end="104" vertical-scroll-proportion="-2.9855072">
+            <state line="2" column="2" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
         <option value="$PROJECT_DIR$/app/views/upcomingevents/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/upcomingevent.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/upcomingevents_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/upcomingevents_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/upcomingevents/_form.html.erb" />
       </list>
     </option>
@@ -877,13 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/upcomingevents/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="958" selection-end="958" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="3" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0">
@@ -893,7 +886,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/upcomingevents_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="49" selection-start="104" selection-end="104" vertical-scroll-proportion="-2.9855072">
+        <state line="2" column="2" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/upcomingevents/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="4" selection-start="915" selection-end="915" vertical-scroll-proportion="0.115384616">
           <folding />
         </state>
       </provider>

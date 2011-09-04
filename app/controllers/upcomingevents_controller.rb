@@ -1,6 +1,6 @@
 class UpcomingeventsController < ApplicationController
 
-  before_filter :authenticate ,:except => [:new]
+
 
     #before_filter :authenticate, :except => [:login]
     # GET /upcomingevents

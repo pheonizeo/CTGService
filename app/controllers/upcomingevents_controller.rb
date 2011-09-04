@@ -1,12 +1,13 @@
 class UpcomingeventsController < ApplicationController
 
-
-
+    load_and_authorize_resource
 
     #before_filter :authenticate, :except => [:login]
     # GET /upcomingevents
     # GET /upcomingevents.xml
+
     def index
+
       @upcomingevents = Upcomingevent.find(:all, :order => 'timestart')
 
       respond_to do |format|
@@ -20,7 +21,12 @@ class UpcomingeventsController < ApplicationController
     # GET /upcomingevents/1
     # GET /upcomingevents/1.xml
     def show
+
       @upcomingevent = Upcomingevent.find(params[:id])
+
+
+
+
 
       respond_to do |format|
         format.html # show.html.erb
@@ -34,14 +40,15 @@ class UpcomingeventsController < ApplicationController
 
     def new
 
-
       @upcomingevent = Upcomingevent.new
+
+
 
       respond_to do |format|
         format.html # new.html.erb
         format.xml { render :xml => @upcomingevent }
       end
-                                protected_methods
+
 
     end
 
@@ -89,6 +96,7 @@ class UpcomingeventsController < ApplicationController
     # DELETE /upcomingevents/1.xml
     def destroy
 
+
       @upcomingevent = Upcomingevent.find(params[:id])
       @upcomingevent.destroy
 
@@ -97,6 +105,7 @@ class UpcomingeventsController < ApplicationController
         format.xml { head :ok }
       end
     end
+
 
     protected
     def authenticate

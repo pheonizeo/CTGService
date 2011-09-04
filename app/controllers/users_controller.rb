@@ -100,9 +100,9 @@ class UsersController < ApplicationController
 
   end
 
-  protected
-  def authenticate
+  #protected
+  #def authenticate
 
-  end
+  #end
 
 end

@@ -2,6 +2,8 @@ CTGService::Application.routes.draw do
 
 
 
+  get "access_denied/index"
+
   get 'admin' => 'admin#index'
 
  controller :sessions do
@@ -18,6 +20,8 @@ CTGService::Application.routes.draw do
 
 
   resources :upcomingevents
+
+
 
   #get "event/index"
   #  resources :events do

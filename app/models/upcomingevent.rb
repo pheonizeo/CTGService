@@ -7,4 +7,5 @@ class Upcomingevent < ActiveRecord::Base
   validates :timeexpire, :presence => true
 
 
+
 end

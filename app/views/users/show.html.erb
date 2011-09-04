@@ -1,9 +1,11 @@
-<p id="notice"><%= notice %></p>
-<fieldset>
-  <p>
-    <b>Name:</b>
-    <%= @user.name %>
-  </p>
+<p align="center" id="notice"><%= notice %></p>
+<div class="bluebox" style="text-align: center">
+  <h2><%= @user.name %></h2>
+  </div>
+</br>
+<div class="bluebox" align="left">
+  <table>
+    <tbody>
 
   <p>
     <b>Hashed password:</b>
@@ -19,4 +21,6 @@
 
   <%= link_to 'Edit', edit_user_path(@user) %> |
   <%= link_to 'Back', users_path %>
-</fieldset>
+      </tbody>
+      </table>
+</div>

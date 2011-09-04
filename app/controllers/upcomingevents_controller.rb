@@ -33,6 +33,7 @@ class UpcomingeventsController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @upcomingevent }
     end
+
   end
 
   # GET /upcomingevents/1/edit
@@ -83,8 +84,8 @@ class UpcomingeventsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-  #protected
-  #def authenticate
+  protected
+  def authenticate
 
-  #end
+  end
 end

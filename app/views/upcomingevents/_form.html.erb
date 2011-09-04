@@ -1,5 +1,8 @@
 <%= form_for(@upcomingevent) do |f| %>
-    <fieldset>
+
+
+
+
   <% if @upcomingevent.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@upcomingevent.errors.count, "error") %> prohibited this upcomingevent from being saved:</h2>
@@ -12,28 +15,33 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+  <div>
     <%= f.label :name %><br />
+
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div>
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+
+    <%= f.text_area:description %>
   </div>
-  <div class="field">
+  <div>
     <%= f.label :location %><br />
+
     <%= f.text_field :location %>
   </div>
-  <div class="field">
+  <div>
     <%= f.label :timestart %><br />
+
     <%= f.datetime_select :timestart %>
   </div>
-  <div class="field">
+  <div>
     <%= f.label :timeexpire %><br />
     <%= f.datetime_select :timeexpire %>
   </div>
-  <div class="actions">
+  <div>
     <%= f.submit %>
   </div>
-        </fieldset>
+
 <% end %>

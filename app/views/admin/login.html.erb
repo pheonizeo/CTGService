@@ -1,57 +1,65 @@
 <%= form_tag do %>
 
     <!--login to system-->
-    <fieldset>
-      <legend style="text-align:center">Please Log In</legend>
-      <div style="text-align: center"></div>
-      <table style="margin: 0 auto 0 auto">
+    <div class="bluebox" align="center">
+      <h2>Chiangmai To Go </h2>
+    </div>
+    </br>
+
+    <div class="bluebox" align="center">
+
+      <tr>
+        <td>
+          <font color="#CC0000">
+            <div class="action"><p id="alert"><%= alert %></p></div>
+          </font>
+        </td>
+
+      </tr>
+
+
+      <table style="margin:0 auto 0 auto">
 
         <tr>
           <td>
-            <font color="#CC0000"><div class="action"><p id="alert"><%= alert %></p></div> </font>
+            <label for="name">Name:</label>
           </td>
-          </div>
+          <td>
+            <%= text_field_tag :name, params[:name] %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password:</label>
+          </td>
+          <td>
+            <%= password_field_tag :password, params[:password] %>
+          </td>
         </tr>
 
 
-        <table style="margin:0 auto 0 auto">
+        <table style="margin:0 auto 0 auto" align="center">
 
           <tr>
             <td>
-              <label for="name">Name:</label>
+
+              <div class="actions" align="center"><%= submit_tag "Login" %></div>
             </td>
+
+
             <td>
-              <%= text_field_tag :name, params[:name] %>
+              <div class="actions" align="center"><%= submit_tag "Cancel" %></div>
             </td>
+
+            <!-- <td>or <%= link_to "Sign up", :controller => 'users', :action =>'new' %></td>  -->
+
+
           </tr>
-          <tr>
-            <td>
-              <label for="password">Password:</label>
-            </td>
-            <td>
-              <%= password_field_tag :password, params[:password] %>
-            </td>
-          </tr>
+
         </table>
+      </table>
+    </div>
 
 
-        <div style="text-align:center">
 
-          <table style="margin:0 auto 0 auto">
-            <tr>
-              <td>
-                <div class="actions"><%= submit_tag "Login" %></div>
-              </td>
-              <td>
-                <div class="actions"><%= submit_tag "Cancel" %></div>
-              </td>
-              <td>or <%= link_to "Sign up", :controller => 'users', :action =>'new' %></td>
-
-
-            </tr>
-          </table>
-        </div>
-
-
-    </fieldset>
 <% end %>

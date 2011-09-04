@@ -1,33 +1,49 @@
-<fieldset>
-  <legend style="text-align:center">Listing users</legend>
+<div class="bluebox" align="center">
+  <h2>Listing users</h2>
+</div>
+</br>
 
-  <table style="margin:0 auto 0 auto">
+<div class="bluebox" align="center">
+  <table rules="rows" frame="below">
+    <tbody>
+    <tr>
+      <th colspan="6" style="text-align: right;">
+        <form method="New User" action="/users/new" class="button_to">
+          <div>
+            <input type="submit" value="New users">
+          </div>
+        </form>
+      </th>
+    </tr>
+    <tr>
+      <th style="width: 100px" align="left">User</th>
+      <th style="width: 50px;text-align: left;"></th>
+      <th style="width: 40px;text-align: left;"></th>
 
+    </tr>
 
     <% for user in User.all do %>
 
-            <tr>
-              <td><%= user.name %></td>
 
-              <td><%= link_to 'Show', user %></td>
-              <td><%= link_to 'Edit', edit_user_path(user) %></td>
-              <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?',
-                              :method => :delete %></td>
-            </tr>
-    <% end %>
-    </table>
+        <td><%= user.name %></td>
 
-    <br/>
-
-    <div style="text-align:center">
-      <table style="margin:0 auto 0 auto">
-        <tr>
-
-          <%= link_to 'New User', new_user_path %>    or
-
-        <%= link_to 'Back', :controller => "admin", :action =>"login" %>
+        <td><%= link_to 'Detail', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Delete', user, :confirm => 'Are you sure?',
+                        :method => :delete %></td>
         </tr>
-      </table>
-    </div>
-    </div></table>
-</fieldset>
+    <% end %>
+
+    <!--%= link_to 'Back', :controller => "admin", :action =>"login" %-->
+
+
+    </tbody>
+  </table>
+  <table align="left">
+    <tr>
+      <th style="" align="left">
+        <%= link_to 'Back', :controller => 'admin', :action => 'index' %>
+      </th>
+    </tr>
+  </table>
+</div>

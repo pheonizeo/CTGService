@@ -1,18 +1,39 @@
-<h1>Event List</h1>
+<div class="bluebox" align="center">
+  <h2>Event list</h2>
+</div>
+</br>
+
+<div class="bluebox" align="center">
+  <table rules="rows" frame="below">
+    <tbody>
+    <tr>
+      <th colspan="6" style="text-align: right;">
+        <form method="new_upcomingevent_path" action="/upcomingevents/new" class="button_to">
+          <div>
+            <input type="submit" value="Add event">
+
+          </div>
+        </form>
+      </th>
+    </tr>
+    <th style="width: 255px" align="left">Name</th>
+    <th style="width: 50px;text-align: left;"></th>
+    <th style="width: 40px;text-align: left;"></th>
+    <th style="width: 60px;text-align: left;"></th>
 
 
-<fieldset>
-  <table>
-    <!-- <tr>
-     <th>Name</th>
-     <th>Description</th>
-     <th>Location</th>
-     <th>Time start</th>
-     <th>Time expire</th>
-     <th></th>
-     <th></th>
-     <th></th>
-   </tr> -->
+
+    <th align="right">
+      <a href="/upcomingevents.xml">XML file</a>
+    </th>
+    <!-- <th>Description</th>
+  <th>Location</th>
+  <th>Time start</th>
+  <th>Time expire</th>
+  <th></th>
+  <th></th>
+  <th></th>  -->
+    </tr>
 
     <% @upcomingevents.each do |upcomingevent| %>
         <tr>
@@ -21,20 +42,28 @@
     <td><%= upcomingevent.location %></td>
     <td><%= upcomingevent.timestart %></td>
     <td><%= upcomingevent.timeexpire %></td>  -->
-          <td><%= link_to 'Show', upcomingevent %></td>
+          <td><%= link_to 'Detail', upcomingevent %></td>
           <td><%= link_to 'Edit', edit_upcomingevent_path(upcomingevent) %></td>
-          <td><%= link_to 'Destroy', upcomingevent, :confirm => 'Are you sure?', :method => :delete %></td>
-          <td><a href="<%= upcomingevent_path(upcomingevent) %>.xml">xml file</a></td>
+          <td><%= link_to 'Delete', upcomingevent, :confirm => 'Are you sure?', :method => :delete %></td>
+          <td><a href="<%= upcomingevent_path(upcomingevent) %>.xml">xml</a></td>
 
 
         </tr>
+        </tbody>
     <% end %>
-  </table>
+    </table>
+  <table align="left">
+  <tr>
+  <th style="" align="left">
+  <%= link_to 'Back', :controller => 'admin',:action => 'index'%>
+  </th>
+  </tr>
+      </table>
+</div>
 
-  <br/>
 
 
-  <%= button_to 'Add event', new_upcomingevent_path %>
 
-  <td><a href="<%= upcomingevents_url %>.xml">xml file</a></td>
-</fieldset>
+
+
+

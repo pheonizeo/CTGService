@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_filter :authenticate, :except => [:login]
+  #before_filter :authenticate, :except => [:login]
   # GET /users
   # GET /users.xml
   def index
@@ -100,9 +100,9 @@ class UsersController < ApplicationController
 
   end
 
-  protected
-  def authenticate
+  #protected
+  #def authenticate
 
-  end
+  #end
 
 end

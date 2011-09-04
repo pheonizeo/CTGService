@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20110808160914) do
     t.string   "location"
     t.datetime "timestart"
     t.datetime "timeexpire"
+    t.string   "ref"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

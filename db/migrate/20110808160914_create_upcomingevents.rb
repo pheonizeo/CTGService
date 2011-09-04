@@ -6,6 +6,7 @@ class CreateUpcomingevents < ActiveRecord::Migration
       t.string :location
       t.datetime :timestart
       t.datetime :timeexpire
+      t.string :ref
 
       t.timestamps
     end

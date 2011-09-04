@@ -24,9 +24,13 @@ class UpcomingeventsController < ApplicationController
     end
   end
 
+
   # GET /upcomingevents/new
   # GET /upcomingevents/new.xml
+
   def new
+
+
     @upcomingevent = Upcomingevent.new
 
     respond_to do |format|
@@ -38,12 +42,14 @@ class UpcomingeventsController < ApplicationController
 
   # GET /upcomingevents/1/edit
   def edit
+
     @upcomingevent = Upcomingevent.find(params[:id])
   end
 
   # POST /upcomingevents
   # POST /upcomingevents.xml
   def create
+
     @upcomingevent = Upcomingevent.new(params[:upcomingevent])
 
     respond_to do |format|
@@ -60,6 +66,7 @@ class UpcomingeventsController < ApplicationController
   # PUT /upcomingevents/1
   # PUT /upcomingevents/1.xml
   def update
+
     @upcomingevent = Upcomingevent.find(params[:id])
 
     respond_to do |format|
@@ -76,6 +83,7 @@ class UpcomingeventsController < ApplicationController
   # DELETE /upcomingevents/1
   # DELETE /upcomingevents/1.xml
   def destroy
+
     @upcomingevent = Upcomingevent.find(params[:id])
     @upcomingevent.destroy
 
@@ -84,8 +92,10 @@ class UpcomingeventsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-  protected
-  def authenticate
 
-  end
+  #protected
+  #def authenticate
+
+  #end
+
 end

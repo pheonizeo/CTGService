@@ -3,45 +3,61 @@
 
 
 
-  <% if @upcomingevent.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@upcomingevent.errors.count, "error") %> prohibited this upcomingevent from being saved:</h2>
+    <% if @upcomingevent.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@upcomingevent.errors.count, "error") %> prohibited this upcomingevent from being
+            saved:</h2>
 
-      <ul>
-      <% @upcomingevent.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+          <ul>
+            <% @upcomingevent.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
 
-  <div>
-    <%= f.label :name %><br />
 
-    <%= f.text_field :name %>
-  </div>
-  <div>
-    <%= f.label :description %><br />
 
-    <%= f.text_area:description %>
-  </div>
-  <div>
-    <%= f.label :location %><br />
+        <div>
+          <%= f.label :name %>
+          <br/>
 
-    <%= f.text_field :location %>
-  </div>
-  <div>
-    <%= f.label :timestart %><br />
+          <%= f.text_field :name %>
+        </div>
 
-    <%= f.datetime_select :timestart %>
-  </div>
-  <div>
-    <%= f.label :timeexpire %><br />
-    <%= f.datetime_select :timeexpire %>
-  </div>
-  <div>
-    <%= f.submit %>
-  </div>
+        <div>
+          <%= f.label :description %>
+          <br/>
 
-<% end %>
+          <%= f.text_area :description %>
+        </div>
+
+        <div>
+          <%= f.label :location %>
+          <br/>
+
+          <%= f.text_field :location %>
+        </div>
+
+        <div>
+          <%= f.label :reference %>  <br/>
+          <%= f.text_field :ref %>
+        </div>
+        <div>
+          <%= f.label :timestart %>
+          <br/>
+          <%= f.datetime_select :timestart %>
+        </div>
+
+        <div>
+          <%= f.label :timeexpire %>
+          <br/>
+          <%= f.datetime_select :timeexpire %>
+        </div>
+
+        <div>
+          <%= f.submit %>
+        </div>
+
+    <% end %>

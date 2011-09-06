@@ -55,7 +55,7 @@
         <div>
           <%= f.label :timeexpire %>
           <br/>
-          <%= f.datetime_select :timeexpire %>
+          <%= f.datetime_select :timeexpire, :default => 1.minutes.from_now %>
         </div>
 
         <div>
